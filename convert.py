@@ -319,7 +319,7 @@ CHAPTER_TEMPLATE = Template("""\
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} — AI Trending Watch</title>
-    <meta name="description" content="Claude Code CLI {{ title }}の解説 — AIコーディングアシスタント完全ガイド">
+    <meta name="description" content="AI Trending Watch — {{ title }}">
     <meta property="og:title" content="{{ title }} — AI Trending Watch">
     <meta property="og:description" content="Claude Code CLI {{ title }}の解説">
     <meta property="og:type" content="article">
@@ -412,10 +412,10 @@ INDEX_TEMPLATE = Template("""\
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claude Code 完全ガイド</title>
-    <meta name="description" content="AIコーディングアシスタント Claude Code の使い方を基礎から応用まで完全解説">
-    <meta property="og:title" content="Claude Code 完全ガイド">
-    <meta property="og:description" content="AIコーディングアシスタント Claude Code の使い方を基礎から応用まで完全解説">
+    <title>AI Trending Watch — 毎週のAIリポおすすめ</title>
+    <meta name="description" content="毎週更新・GitHub急上昇のAIリポジトリをClaude Code環境目線で★評価・スマホで読む週次ガイド">
+    <meta property="og:title" content="AI Trending Watch — 毎週のAIリポおすすめ">
+    <meta property="og:description" content="毎週更新・GitHub急上昇のAIリポジトリをClaude Code環境目線で★評価">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fukukei23.github.io/ai-trending-guide/">
     <meta property="og:image" content="https://fukukei23.github.io/ai-trending-guide/assets/ogp.png">
@@ -434,8 +434,8 @@ INDEX_TEMPLATE = Template("""\
 
     <main class="content">
         <section class="hero">
-            <h1>Claude Code 完全ガイド</h1>
-            <p>AIコーディングアシスタント Claude Code の使い方を、<br>基礎から応用まで完全解説</p>
+            <h1>📈 AI Trending Watch</h1>
+            <p>毎週更新・GitHub急上昇のAIリポジトリを、<br>あなたのClaude Code環境目線で★評価しておすすめ化</p>
         </section>
 
         {% for cat in categories %}
@@ -459,23 +459,23 @@ INDEX_TEMPLATE = Template("""\
             <div class="feature-grid">
                 <div class="feature-item">
                     <span class="feature-icon">🎯</span>
-                    <h3>初心者向け</h3>
-                    <p>専門用語は初出時に説明。前提知識不要</p>
+                    <h3>環境特化</h3>
+                    <p>Claude Code CLI環境に合いそうかを★5段階で評価</p>
                 </div>
                 <div class="feature-item">
-                    <span class="feature-icon">📊</span>
-                    <h3>図解付き</h3>
-                    <p>アーキテクチャやフローをMermaid図で視覚化</p>
+                    <span class="feature-icon">📈</span>
+                    <h3>週次バズ</h3>
+                    <p>今日の★増加と成長率で話題のリポを素早く発掘</p>
                 </div>
                 <div class="feature-item">
                     <span class="feature-icon">📱</span>
                     <h3>モバイル対応</h3>
-                    <p>スマホからいつでも見返せるレスポンシブデザイン</p>
+                    <p>スマホの隙間時間で週末にサクッとチェック</p>
                 </div>
                 <div class="feature-item">
                     <span class="feature-icon">🌙</span>
                     <h3>ダークモード</h3>
-                    <p>目に優しいテーマ切替対応</p>
+                    <p>夜の閲覧にも優しいテーマ切替</p>
                 </div>
             </div>
         </section>
