@@ -2,7 +2,6 @@
 """AI Trending Watch: Markdown → モバイル最適化HTML変換スクリプト."""
 
 import re
-import unicodedata
 from pathlib import Path
 
 from jinja2 import Template
@@ -99,27 +98,34 @@ def _extract_desc_from_h1(text: str) -> str:
 
 
 def build_chapter_map() -> dict:
-    """source/ をスキャンして完全なCHAPTER_MAPを構築。
-    CHAPTER_MAPに未登録のファイルは自動検出して追加する。"""
-    result = dict(CHAPTER_MAP)
+    """source/ の実ファイルのみからCHAPTER_MAPを構築。
+    CHAPTER_MAPのメタデータを実ファイルに適用。実在しないエントリは表示しない(404防止)。"""
+    result = {}
 
     for md_file in sorted(SOURCE_DIR.glob("*.md")):
         filename = md_file.name
         if filename.startswith("_"):
             continue  # _README.md等は除外
-        if filename in result:
-            continue  # 既登録はスキップ
 
         text = md_file.read_text(encoding="utf-8")
         meta, body = _extract_frontmatter(text)
 
-        title = meta.get("title") or _extract_title_from_h1(text) or Path(filename).stem
-        desc = meta.get("card_desc") or meta.get("desc") or _extract_desc_from_h1(text) or title
-        icon = meta.get("icon", "📄")
-        slug = meta.get("slug") or _filename_to_slug(filename)
-
-        result[filename] = {"slug": slug, "title": title, "icon": icon, "desc": desc}
-        print(f"AUTO: {filename} → {slug} ({title})")
+        if filename in CHAPTER_MAP:
+            # CHAPTER_MAPのメタデータを適用(フロントマターがあれば優先)
+            base = CHAPTER_MAP[filename]
+            result[filename] = {
+                "slug": base["slug"],
+                "title": meta.get("title") or base["title"],
+                "icon": meta.get("icon", base["icon"]),
+                "desc": meta.get("card_desc") or meta.get("desc") or base["desc"],
+            }
+        else:
+            title = meta.get("title") or _extract_title_from_h1(text) or Path(filename).stem
+            desc = meta.get("card_desc") or meta.get("desc") or _extract_desc_from_h1(text) or title
+            icon = meta.get("icon", "📄")
+            slug = meta.get("slug") or _filename_to_slug(filename)
+            result[filename] = {"slug": slug, "title": title, "icon": icon, "desc": desc}
+            print(f"AUTO: {filename} → {slug} ({title})")
 
     return result
 
@@ -439,7 +445,7 @@ INDEX_TEMPLATE = Template("""\
                 {% for ch in cat.chapters %}
                 <a href="chapters/{{ ch.slug }}.html" class="chapter-card">
                     <div class="card-icon">{{ ch.icon }}</div>
-                    <div class="card-number">第{{ ch.number }}章</div>
+                    {% if ch.number %}<div class="card-number">第{{ ch.number }}章</div>{% endif %}
                     <h2 class="card-title">{{ ch.title }}</h2>
                     <p class="card-desc">{{ ch.desc }}</p>
                 </a>
@@ -635,7 +641,7 @@ def rewrite_links(html: str, chapter_map: dict | None = None) -> str:
                 elif "#" in decoded:
                     anchor = "#" + decoded.split("#", 1)[1]
                 return f'href="{info["slug"]}.html{anchor}"'
-        return f'href="#"'
+        return 'href="#"'
 
     html = re.sub(r'href="([^"]*\.md[^"]*)"', replace_md_link, html)
 
@@ -740,7 +746,7 @@ def main():
     chapters = []
     for filename, info in sorted(effective_map.items()):
         chapters.append({
-            "number": info["slug"][:2],
+            "number": info["slug"][:2] if info["slug"][:2].isdigit() else "",
             "slug": info["slug"],
             "title": info["title"],
             "icon": info["icon"],
