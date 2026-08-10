@@ -2,209 +2,209 @@
 
 > 毎週自動更新。あなたのClaude Code環境に特化しておすすめを評価。
 
-## 📈 今週のバズ(TOP 15件)
+## 📈 今週のバズ(TOP 16件)
 
 ### ⚙️ [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
-★★★★★  **今日★1352** / 累計★141,761 / 成長率0.9%  `2週連続`
+★★★★★  **今日★1352** / 累計★141,784 / 成長率0.9%  `2週連続`
 
-A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+フロントエンドからRedditまで対応するAI agent群
 
-> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141761・今日★1352(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141784・今日★1352(バズ))
 
 ### ⚙️ [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 
-★★★★★  **今日★659** / 累計★85,714 / 成長率0.8%  `初見`
+★★★★★  **今日★659** / 累計★85,722 / 成長率0.8%  `初見`
 
-Production-grade engineering skills for AI coding agents.
+AI coding agent向けの本番対応エンジニアリングスキル集
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85714・今日★659(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85722・今日★659(バズ))
 
 ### ⚙️ [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent)
 
-★★★★★  **今日★2655** / 累計★12,986 / 成長率20.4%  `2週連続`
+★★★★★  **今日★2655** / 累計★13,030 / 成長率20.4%  `2週連続`
 
-A self-improving RLM agent for coding workflows and long-running autonomous tasks.
+コーディング向け自己改善RLM agent
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★12986・今日★2655(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13030・今日★2655(バズ))
 
 ### ⚙️ [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
 
-★★★★★  **今日★815** / 累計★165,010 / 成長率0.5%  `2週連続`
+★★★★★  **今日★815** / 累計★165,036 / 成長率0.5%  `2週連続`
 
-The context API to search, scrape, and interact with the web at scale. 🔥
+Webを大規模に検索・取得するcontext API
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165010・今日★815(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165036・今日★815(バズ))
 
 ### ⚙️ [ruvnet/RuView](https://github.com/ruvnet/RuView)
 
-★★★★☆  **今日★186** / 累計★89,340 / 成長率0.2%  `定着`
+★★★★☆  **今日★186** / 累計★89,356 / 成長率0.2%  `定着`
 
-π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.
+WiFi信号で空間 inteligência・バイタル監視・存在検知
 
-> ⚙️ルール採点 ★4(環境プロファイル合致・累計★89340・3週以上定着)
+> ⚙️ルール採点 ★4(環境プロファイル合致・累計★89356・3週以上定着)
 
 ### ⚙️ [danielmiessler/LifeOS](https://github.com/danielmiessler/LifeOS)
 
-★★★★☆  **今日★357** / 累計★17,865 / 成長率2.0%  `2週連続`
+★★★★☆  **今日★357** / 累計★17,884 / 成長率2.0%  `2週連続`
 
-⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.
+人生と仕事を進化させるAIハーネス
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17865)
+> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17884)
 
 ### ⚙️ [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag)
 
-★★★★☆  **今日★682** / 累計★3,497 / 成長率19.5%  `2週連続`
+★★★★☆  **今日★682** / 累計★3,516 / 成長率19.4%  `2週連続`
 
-The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs
+モノレポ用のRAG - AIと知識グラフでコードを理解
 
 > ⚙️ルール採点 ★4(AI関連キーワード2件・環境プロファイル合致・今日★682(バズ))
 
 ### ⚙️ [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
 
-★★★★☆  **今日★921** / 累計★126,270 / 成長率0.7%  `2週連続`
+★★★★☆  **今日★921** / 累計★126,297 / 成長率0.7%  `2週連続`
 
-The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.
+グラフ/ノード式diffusionモデルGUI/API/バックエンド
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126270・今日★921(バズ))
+> ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126297・今日★921(バズ))
 
 ### ⚙️ [semantica-agi/semantica](https://github.com/semantica-agi/semantica)
 
-★★★☆☆  **今日★967** / 累計★4,040 / 成長率23.9%  `2週連続`
+★★★☆☆  **今日★967** / 累計★4,062 / 成長率23.8%  `2週連続`
 
-Graph-Native Infrastructure for Context and Accountable AI Systems
+コンテキストと説明可能なAIシステムのためのグラフネイティブインフラ
 
 > ⚙️ルール採点 ★3(環境プロファイル合致・今日★967(バズ))
 
 ### ⚙️ [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
 
-★★★☆☆  **今日★167** / 累計★76,430 / 成長率0.2%  `2週連続`
+★★★☆☆  **今日★167** / 累計★76,452 / 成長率0.2%  `2週連続`
 
-The open-source app everyone uses to manage agents at work
+職場でagentを管理するオープンソースアプリ
 
-> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76430)
+> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76452)
 
 
 ## 🌱 定着中(3週以上・2件)
 
 ### ⚙️ [ruvnet/RuView](https://github.com/ruvnet/RuView)
 
-★★★★☆  **今日★186** / 累計★89,340 / 成長率0.2%  `定着`
+★★★★☆  **今日★186** / 累計★89,356 / 成長率0.2%  `定着`
 
-π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.
+WiFi信号で空間 inteligência・バイタル監視・存在検知
 
-> ⚙️ルール採点 ★4(環境プロファイル合致・累計★89340・3週以上定着)
+> ⚙️ルール採点 ★4(環境プロファイル合致・累計★89356・3週以上定着)
 
 ### ⚙️ [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
 
-★★★☆☆  **今日★388** / 累計★18,008 / 成長率2.1%  `定着`
+★★★☆☆  **今日★388** / 累計★18,022 / 成長率2.1%  `定着`
 
 
 
-> ⚙️ルール採点 ★3(累計★18008・3週以上定着)
+> ⚙️ルール採点 ★3(累計★18022・3週以上定着)
 
 
 ## 🆕 新着(14件)
 
 ### ⚙️ [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
-★★★★★  **今日★1352** / 累計★141,761 / 成長率0.9%  `2週連続`
+★★★★★  **今日★1352** / 累計★141,784 / 成長率0.9%  `2週連続`
 
-A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+フロントエンドからRedditまで対応するAI agent群
 
-> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141761・今日★1352(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141784・今日★1352(バズ))
 
 ### ⚙️ [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 
-★★★★★  **今日★659** / 累計★85,714 / 成長率0.8%  `初見`
+★★★★★  **今日★659** / 累計★85,722 / 成長率0.8%  `初見`
 
-Production-grade engineering skills for AI coding agents.
+AI coding agent向けの本番対応エンジニアリングスキル集
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85714・今日★659(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85722・今日★659(バズ))
 
 ### ⚙️ [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent)
 
-★★★★★  **今日★2655** / 累計★12,986 / 成長率20.4%  `2週連続`
+★★★★★  **今日★2655** / 累計★13,030 / 成長率20.4%  `2週連続`
 
-A self-improving RLM agent for coding workflows and long-running autonomous tasks.
+コーディング向け自己改善RLM agent
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★12986・今日★2655(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13030・今日★2655(バズ))
 
 ### ⚙️ [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
 
-★★★★★  **今日★815** / 累計★165,010 / 成長率0.5%  `2週連続`
+★★★★★  **今日★815** / 累計★165,036 / 成長率0.5%  `2週連続`
 
-The context API to search, scrape, and interact with the web at scale. 🔥
+Webを大規模に検索・取得するcontext API
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165010・今日★815(バズ))
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165036・今日★815(バズ))
 
 ### ⚙️ [danielmiessler/LifeOS](https://github.com/danielmiessler/LifeOS)
 
-★★★★☆  **今日★357** / 累計★17,865 / 成長率2.0%  `2週連続`
+★★★★☆  **今日★357** / 累計★17,884 / 成長率2.0%  `2週連続`
 
-⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.
+人生と仕事を進化させるAIハーネス
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17865)
+> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17884)
 
 ### ⚙️ [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag)
 
-★★★★☆  **今日★682** / 累計★3,497 / 成長率19.5%  `2週連続`
+★★★★☆  **今日★682** / 累計★3,516 / 成長率19.4%  `2週連続`
 
-The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs
+モノレポ用のRAG - AIと知識グラフでコードを理解
 
 > ⚙️ルール採点 ★4(AI関連キーワード2件・環境プロファイル合致・今日★682(バズ))
 
 ### ⚙️ [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
 
-★★★★☆  **今日★921** / 累計★126,270 / 成長率0.7%  `2週連続`
+★★★★☆  **今日★921** / 累計★126,297 / 成長率0.7%  `2週連続`
 
-The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.
+グラフ/ノード式diffusionモデルGUI/API/バックエンド
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126270・今日★921(バズ))
+> ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126297・今日★921(バズ))
 
 ### ⚙️ [semantica-agi/semantica](https://github.com/semantica-agi/semantica)
 
-★★★☆☆  **今日★967** / 累計★4,040 / 成長率23.9%  `2週連続`
+★★★☆☆  **今日★967** / 累計★4,062 / 成長率23.8%  `2週連続`
 
-Graph-Native Infrastructure for Context and Accountable AI Systems
+コンテキストと説明可能なAIシステムのためのグラフネイティブインフラ
 
 > ⚙️ルール採点 ★3(環境プロファイル合致・今日★967(バズ))
 
 ### ⚙️ [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
 
-★★★☆☆  **今日★167** / 累計★76,430 / 成長率0.2%  `2週連続`
+★★★☆☆  **今日★167** / 累計★76,452 / 成長率0.2%  `2週連続`
 
-The open-source app everyone uses to manage agents at work
+職場でagentを管理するオープンソースアプリ
 
-> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76430)
+> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76452)
 
 ### ⚙️ [LadybirdBrowser/ladybird](https://github.com/LadybirdBrowser/ladybird)
 
-★★★☆☆  **今日★106** / 累計★65,241 / 成長率0.2%  `2週連続`
+★★★☆☆  **今日★106** / 累計★65,244 / 成長率0.2%  `2週連続`
 
-Truly independent web browser
+真に独立したWebブラウザ
 
-> ⚙️ルール採点 ★3(環境プロファイル合致・累計★65241)
+> ⚙️ルール採点 ★3(環境プロファイル合致・累計★65244)
 
 ### ⚙️ [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
 
-★★★☆☆  **今日★234** / 累計★97,186 / 成長率0.2%  `2週連続`
+★★★☆☆  **今日★234** / 累計★97,194 / 成長率0.2%  `2週連続`
 
-TradingAgents: Multi-Agents LLM Financial Trading Framework
+マルチagentによるLLM金融取引フレームワーク
 
-> ⚙️ルール採点 ★3(AI関連キーワード2件・累計★97186)
+> ⚙️ルール採点 ★3(AI関連キーワード2件・累計★97194)
 
 ### ⚙️ [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)
 
-★★☆☆☆  **今日★215** / 累計★60,964 / 成長率0.4%  `初見`
+★★☆☆☆  **今日★215** / 累計★60,974 / 成長率0.4%  `初見`
 
-小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫
+小红書・抖音・快手・B站・微博などの爬虫ツール
 
-> ⚙️ルール採点 ★2(累計★60964)
+> ⚙️ルール採点 ★2(累計★60974)
 
 ### ⚙️ [google-deepmind/weathernext](https://github.com/google-deepmind/weathernext)
 
-★☆☆☆☆  **今日★327** / 累計★7,327 / 成長率4.5%  `2週連続`
+★☆☆☆☆  **今日★327** / 累計★7,337 / 成長率4.5%  `2週連続`
 
 
 
@@ -212,9 +212,9 @@ TradingAgents: Multi-Agents LLM Financial Trading Framework
 
 ### ⚙️ [opa334/Dopamine](https://github.com/opa334/Dopamine)
 
-★☆☆☆☆  **今日★95** / 累計★6,007 / 成長率1.6%  `2週連続`
+★☆☆☆☆  **今日★174** / 累計★6,014 / 成長率2.9%  `2週連続`
 
-Dopamine is a semi-untethered jailbreak for iOS 15 to 26(.0.1)
+iOS 15-26用のsemi-untethered jailbreak
 
 > ⚙️ルール採点 ★1(環境プロファイル合致・環境非関連(2件))
 
@@ -230,6 +230,6 @@ Dopamine is a semi-untethered jailbreak for iOS 15 to 26(.0.1)
 
 ## 🤖 今週の評価コスト
 
-- **$0.0000** / 16件評価
+- **$0.0011** / 16件評価
 - 評価方法: rule_fallback:16
-- 週$20キャップ対比: 0.00%
+- 週$20キャップ対比: 0.01%
