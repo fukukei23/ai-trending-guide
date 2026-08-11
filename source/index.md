@@ -6,57 +6,85 @@
 
 ### ⚙️ [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
-★★★★★  **今日★1349** / 累計★141,793 / 成長率0.9%  `2週連続`
+★★★★★  **今日★1349** / 累計★141,796 / 成長率0.9%  `2週連続`
 
-A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+多様な専門性を持つAIエージェントの統合プラットフォーム
 
-> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141793・今日★1349(バズ))
+📖 詳説: フロントエンド開発者、SNSコミュニティマネージャー、アイデア発想者など、それぞれ独自の性格と専門性を持つ複数のAIエージェントを提供。タスクに応じて適切なエージェントが担当し、成果物を生成する。
+
+💡 かみ砕くと: ウェブサイト制作、SNS運用、アイデア出しなど、不同の専門家のAIチームを 하나로 묶은 것。依頼内容に合わせて最適な担当が動く。
+
+> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141796・今日★1349(バズ))
 
 ### ⚙️ [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 
-★★★★★  **今日★659** / 累計★85,723 / 成長率0.8%  `初見`
+★★★★★  **今日★659** / 累計★85,724 / 成長率0.8%  `初見`
 
-Production-grade engineering skills for AI coding agents.
+AIコーディングエージェント向けの本番対応エンジニアリングスキル
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85723・今日★659(バズ))
+📖 詳説: AIコーディングエージェントが高品質なコードを書くための、プロダクションレベルのエンジニアリングスキルセット。コードレビュー、テスト、リファクタリングなどの実践的な能力を提供する。
+
+💡 かみ砕くと: AIにプログラミングを教えて、上手にコードを書かせるための教材のようなもの。まるで新人開発者に贈る、高效なコーディング指南書。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85724・今日★659(バズ))
 
 ### ⚙️ [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent)
 
-★★★★★  **今日★2642** / 累計★13,038 / 成長率20.3%  `2週連続`
+★★★★★  **今日★2642** / 累計★13,039 / 成長率20.3%  `2週連続`
 
-A self-improving RLM agent for coding workflows and long-running autonomous tasks.
+自己改善するAIによる自律型コーディング支援エージェント
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13038・今日★2642(バズ))
+📖 詳説: 長期的なコーディングワークフローと自律タスクに対応する自己改善型AIエージェント。実行結果から学習し 지속적으로能力を進化させる、鍋底式改善アーキテクチャを採用している。
+
+💡 かみ砕くと: 一緒に仕事を通じて自然と上手くなっていく、AIアシスタント。最初は 普通 でも、繰り返すうちにどんどん賢くなっていく。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13039・今日★2642(バズ))
 
 ### ⚙️ [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
 
-★★★★★  **今日★835** / 累計★165,044 / 成長率0.5%  `2週連続`
+★★★★★  **今日★835** / 累計★165,046 / 成長率0.5%  `2週連続`
 
-The context API to search, scrape, and interact with the web at scale. 🔥
+大規模Web検索・スクレイピングのためのコンテキストAPI
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165044・今日★835(バズ))
+📖 詳説: スケールメリットで検索、スクレイピング、Webとの相互作用を可能にするコンテキストAPI。Webサイトの構造を理解し、LLMが読める形式でデータを返す。Webアプリケーション開発の効率を大幅に向上させる。
+
+💡 かみ砕くと: Web上の情報をまとめ読みして、知りたいことをわかりやすく教えてくれる便利サービス。まるで能讀量無盡の Web 司書。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165046・今日★835(バズ))
 
 ### ⚙️ [ruvnet/RuView](https://github.com/ruvnet/RuView)
 
 ★★★★☆  **今日★154** / 累計★89,357 / 成長率0.2%  `定着`
 
-π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.
+WiFi сигналを可視化・生命兆候検知に利用するシステム
+
+📖 詳説: 通常のWiFi信号を分析し、映像なしでリアルタイムの空間知能、 vital signs 監視、存在検知を実現する技術。プライバシー配慮型の環境モニタリングソリューションを提供する。
+
+💡 かみ砕くと: スマホのWiFiが使える场所なら、録画없이人が动いているか检测できる技术。まるで壁に目がないかのように、存在を感知する。
 
 > ⚙️ルール採点 ★4(環境プロファイル合致・累計★89357・3週以上定着)
 
 ### ⚙️ [danielmiessler/LifeOS](https://github.com/danielmiessler/LifeOS)
 
-★★★★☆  **今日★315** / 累計★17,891 / 成長率1.8%  `2週連続`
+★★★★☆  **今日★315** / 累計★17,892 / 成長率1.8%  `2週連続`
 
-⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.
+人生と仕事の状態改善を目指すAIハーネス
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17891)
+📖 詳説: 現在の状態から理想の状態へ効率的に移行するための汎用的な hill-climbing AIフレームワーク。目標設定、行動計画、進捗追跡を通じて人生的・職業的な成長を継続的に支援する。
+
+💡 かみ砕くと: 今の处境から抜け出して、もっと良い状态になるための道案内役。人生の地図を持っており、適切な階段を上らせてくれる。
+
+> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17892)
 
 ### ⚙️ [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag)
 
 ★★★★☆  **今日★682** / 累計★3,517 / 成長率19.4%  `2週連続`
 
-The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs
+知識グラフで мног残コードベース を理解するRAGシステム
+
+📖 詳説: マルチ言語コードベースをAIとナレッジグラフで查询・理解・編集できるRAGシステム。自然言語でコードの構造や関係を询问でき、大型プロジェクト全体の把握と修正が容易になる。
+
+💡 かみ砕くと: 巨大なプログラムの海から、必要な情報を引き出すための AI 司書。複雑なコードでも、直感的に理解の手がかり可以得到する。
 
 > ⚙️ルール採点 ★4(AI関連キーワード2件・環境プロファイル合致・今日★682(バズ))
 
@@ -64,7 +92,11 @@ The ultimate RAG for your monorepo. Query, understand, and edit multi-language c
 
 ★★★★☆  **今日★922** / 累計★126,302 / 成長率0.7%  `2週連続`
 
-The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.
+グラフ式UIでAI画像生成を modular に操作するGUI
+
+📖 詳説: ノードベースの GUI/API/バックエンドを備えた最强の拡散モデル操作環境。ノードを接続することで画像生成プロセスを視覚的に設計・カスタマイズでき、高い柔軟性と拡張性を提供する。
+
+💡 かみ砕くと:  블록을 조립하여 그림을 만드는 도구。専門的な知識がなくても、レゴブロックを積み上げるように美しいAIアートを作成できる。
 
 > ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126302・今日★922(バズ))
 
@@ -72,17 +104,25 @@ The most powerful and modular diffusion model GUI, api and backend with a graph/
 
 ★★★☆☆  **今日★970** / 累計★4,072 / 成長率23.8%  `2週連続`
 
-Graph-Native Infrastructure for Context and Accountable AI Systems
+グラフ構造でAIの文脈管理と説明責任を実現
+
+📖 詳説: グラフデータベースを活用したAIシステムのコンテキスト管理インフラ。ノードとエッジでAIの意思決定の根拠を構造化し、監査可能なAIシステムの構築を実現する。
+
+💡 かみ砕くと: AIがなぜその判断をしたかを、鎖のように繋がった情報で記録・管理できる仕組み。後からいつでもAIの考え 과정을振り返ることができる。
 
 > ⚙️ルール採点 ★3(環境プロファイル合致・今日★970(バズ))
 
 ### ⚙️ [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
 
-★★★☆☆  **今日★198** / 累計★76,456 / 成長率0.3%  `2週連続`
+★★★☆☆  **今日★198** / 累計★76,455 / 成長率0.3%  `2週連続`
 
-The open-source app everyone uses to manage agents at work
+業務におけるAIエージェント管理のためのOSSアプリ
 
-> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76456)
+📖 詳説: チームでAIエージェントを管理・運用するためのオープンソースアプリケーション。エージェントの可視化、監視、協調作業をサポートし、業務効率化を実現する。
+
+💡 かみ砕くと: 社内で使うAIたちをまとめて管理・監視できる управляющая パネル。、まるで従業員を管理する、人事システムのようなもの。
+
+> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76455)
 
 
 ## 🌱 定着中(3週以上・2件)
@@ -91,66 +131,94 @@ The open-source app everyone uses to manage agents at work
 
 ★★★★☆  **今日★154** / 累計★89,357 / 成長率0.2%  `定着`
 
-π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.
+WiFi сигналを可視化・生命兆候検知に利用するシステム
+
+📖 詳説: 通常のWiFi信号を分析し、映像なしでリアルタイムの空間知能、 vital signs 監視、存在検知を実現する技術。プライバシー配慮型の環境モニタリングソリューションを提供する。
+
+💡 かみ砕くと: スマホのWiFiが使える场所なら、録画없이人が动いているか检测できる技术。まるで壁に目がないかのように、存在を感知する。
 
 > ⚙️ルール採点 ★4(環境プロファイル合致・累計★89357・3週以上定着)
 
 ### ⚙️ [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
 
-★★★☆☆  **今日★389** / 累計★18,023 / 成長率2.2%  `定着`
+★★★☆☆  **今日★389** / 累計★18,024 / 成長率2.2%  `定着`
 
 
 
-> ⚙️ルール採点 ★3(累計★18023・3週以上定着)
+> ⚙️ルール採点 ★3(累計★18024・3週以上定着)
 
 
 ## 🆕 新着(14件)
 
 ### ⚙️ [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
-★★★★★  **今日★1349** / 累計★141,793 / 成長率0.9%  `2週連続`
+★★★★★  **今日★1349** / 累計★141,796 / 成長率0.9%  `2週連続`
 
-A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+多様な専門性を持つAIエージェントの統合プラットフォーム
 
-> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141793・今日★1349(バズ))
+📖 詳説: フロントエンド開発者、SNSコミュニティマネージャー、アイデア発想者など、それぞれ独自の性格と専門性を持つ複数のAIエージェントを提供。タスクに応じて適切なエージェントが担当し、成果物を生成する。
+
+💡 かみ砕くと: ウェブサイト制作、SNS運用、アイデア出しなど、不同の専門家のAIチームを 하나로 묶은 것。依頼内容に合わせて最適な担当が動く。
+
+> ⚙️ルール採点 ★5(AI関連キーワード1件・環境プロファイル合致・累計★141796・今日★1349(バズ))
 
 ### ⚙️ [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
 
-★★★★★  **今日★659** / 累計★85,723 / 成長率0.8%  `初見`
+★★★★★  **今日★659** / 累計★85,724 / 成長率0.8%  `初見`
 
-Production-grade engineering skills for AI coding agents.
+AIコーディングエージェント向けの本番対応エンジニアリングスキル
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85723・今日★659(バズ))
+📖 詳説: AIコーディングエージェントが高品質なコードを書くための、プロダクションレベルのエンジニアリングスキルセット。コードレビュー、テスト、リファクタリングなどの実践的な能力を提供する。
+
+💡 かみ砕くと: AIにプログラミングを教えて、上手にコードを書かせるための教材のようなもの。まるで新人開発者に贈る、高效なコーディング指南書。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★85724・今日★659(バズ))
 
 ### ⚙️ [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent)
 
-★★★★★  **今日★2642** / 累計★13,038 / 成長率20.3%  `2週連続`
+★★★★★  **今日★2642** / 累計★13,039 / 成長率20.3%  `2週連続`
 
-A self-improving RLM agent for coding workflows and long-running autonomous tasks.
+自己改善するAIによる自律型コーディング支援エージェント
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13038・今日★2642(バズ))
+📖 詳説: 長期的なコーディングワークフローと自律タスクに対応する自己改善型AIエージェント。実行結果から学習し 지속적으로能力を進化させる、鍋底式改善アーキテクチャを採用している。
+
+💡 かみ砕くと: 一緒に仕事を通じて自然と上手くなっていく、AIアシスタント。最初は 普通 でも、繰り返すうちにどんどん賢くなっていく。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★13039・今日★2642(バズ))
 
 ### ⚙️ [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
 
-★★★★★  **今日★835** / 累計★165,044 / 成長率0.5%  `2週連続`
+★★★★★  **今日★835** / 累計★165,046 / 成長率0.5%  `2週連続`
 
-The context API to search, scrape, and interact with the web at scale. 🔥
+大規模Web検索・スクレイピングのためのコンテキストAPI
 
-> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165044・今日★835(バズ))
+📖 詳説: スケールメリットで検索、スクレイピング、Webとの相互作用を可能にするコンテキストAPI。Webサイトの構造を理解し、LLMが読める形式でデータを返す。Webアプリケーション開発の効率を大幅に向上させる。
+
+💡 かみ砕くと: Web上の情報をまとめ読みして、知りたいことをわかりやすく教えてくれる便利サービス。まるで能讀量無盡の Web 司書。
+
+> ⚙️ルール採点 ★5(AI関連キーワード2件・環境プロファイル合致・累計★165046・今日★835(バズ))
 
 ### ⚙️ [danielmiessler/LifeOS](https://github.com/danielmiessler/LifeOS)
 
-★★★★☆  **今日★315** / 累計★17,891 / 成長率1.8%  `2週連続`
+★★★★☆  **今日★315** / 累計★17,892 / 成長率1.8%  `2週連続`
 
-⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.
+人生と仕事の状態改善を目指すAIハーネス
 
-> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17891)
+📖 詳説: 現在の状態から理想の状態へ効率的に移行するための汎用的な hill-climbing AIフレームワーク。目標設定、行動計画、進捗追跡を通じて人生的・職業的な成長を継続的に支援する。
+
+💡 かみ砕くと: 今の处境から抜け出して、もっと良い状态になるための道案内役。人生の地図を持っており、適切な階段を上らせてくれる。
+
+> ⚙️ルール採点 ★4(AI関連キーワード1件・環境プロファイル合致・累計★17892)
 
 ### ⚙️ [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag)
 
 ★★★★☆  **今日★682** / 累計★3,517 / 成長率19.4%  `2週連続`
 
-The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs
+知識グラフで мног残コードベース を理解するRAGシステム
+
+📖 詳説: マルチ言語コードベースをAIとナレッジグラフで查询・理解・編集できるRAGシステム。自然言語でコードの構造や関係を询问でき、大型プロジェクト全体の把握と修正が容易になる。
+
+💡 かみ砕くと: 巨大なプログラムの海から、必要な情報を引き出すための AI 司書。複雑なコードでも、直感的に理解の手がかり可以得到する。
 
 > ⚙️ルール採点 ★4(AI関連キーワード2件・環境プロファイル合致・今日★682(バズ))
 
@@ -158,7 +226,11 @@ The ultimate RAG for your monorepo. Query, understand, and edit multi-language c
 
 ★★★★☆  **今日★922** / 累計★126,302 / 成長率0.7%  `2週連続`
 
-The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.
+グラフ式UIでAI画像生成を modular に操作するGUI
+
+📖 詳説: ノードベースの GUI/API/バックエンドを備えた最强の拡散モデル操作環境。ノードを接続することで画像生成プロセスを視覚的に設計・カスタマイズでき、高い柔軟性と拡張性を提供する。
+
+💡 かみ砕くと:  블록을 조립하여 그림을 만드는 도구。専門的な知識がなくても、レゴブロックを積み上げるように美しいAIアートを作成できる。
 
 > ⚙️ルール採点 ★4(AI関連キーワード1件・累計★126302・今日★922(バズ))
 
@@ -166,23 +238,35 @@ The most powerful and modular diffusion model GUI, api and backend with a graph/
 
 ★★★☆☆  **今日★970** / 累計★4,072 / 成長率23.8%  `2週連続`
 
-Graph-Native Infrastructure for Context and Accountable AI Systems
+グラフ構造でAIの文脈管理と説明責任を実現
+
+📖 詳説: グラフデータベースを活用したAIシステムのコンテキスト管理インフラ。ノードとエッジでAIの意思決定の根拠を構造化し、監査可能なAIシステムの構築を実現する。
+
+💡 かみ砕くと: AIがなぜその判断をしたかを、鎖のように繋がった情報で記録・管理できる仕組み。後からいつでもAIの考え 과정을振り返ることができる。
 
 > ⚙️ルール採点 ★3(環境プロファイル合致・今日★970(バズ))
 
 ### ⚙️ [paperclipai/paperclip](https://github.com/paperclipai/paperclip)
 
-★★★☆☆  **今日★198** / 累計★76,456 / 成長率0.3%  `2週連続`
+★★★☆☆  **今日★198** / 累計★76,455 / 成長率0.3%  `2週連続`
 
-The open-source app everyone uses to manage agents at work
+業務におけるAIエージェント管理のためのOSSアプリ
 
-> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76456)
+📖 詳説: チームでAIエージェントを管理・運用するためのオープンソースアプリケーション。エージェントの可視化、監視、協調作業をサポートし、業務効率化を実現する。
+
+💡 かみ砕くと: 社内で使うAIたちをまとめて管理・監視できる управляющая パネル。、まるで従業員を管理する、人事システムのようなもの。
+
+> ⚙️ルール採点 ★3(AI関連キーワード1件・累計★76455)
 
 ### ⚙️ [LadybirdBrowser/ladybird](https://github.com/LadybirdBrowser/ladybird)
 
 ★★★☆☆  **今日★56** / 累計★65,245 / 成長率0.1%  `2週連続`
 
-Truly independent web browser
+真に独立したウェブブラウザ
+
+📖 詳説: 既存の巨大企业提供に依存しない、真に独立したウェブブラウザプロジェクト。ブラウザのレンダリングエンジンから独自開発し、ウェブ標準の自由を守ることを目指す。
+
+💡 かみ砕くと: 大きな企業に属さない、自分の意思で動かせるウェブブラウザ。既存のブラウザとは違う、第三の選択肢。
 
 > ⚙️ルール採点 ★3(環境プロファイル合致・累計★65245)
 
@@ -190,17 +274,25 @@ Truly independent web browser
 
 ★★★☆☆  **今日★177** / 累計★97,203 / 成長率0.2%  `2週連続`
 
-TradingAgents: Multi-Agents LLM Financial Trading Framework
+マルチエージェントで金融取引を分析・実行するフレームワーク
+
+📖 詳説: 複数のAIエージェントが協調して金融市场を分析し、投資戦略立案・実行までを行うマルチエージェントLLM金融取引フレームワーク。各エージェントが专門的な分析を担当し、統合的な意思決定を行う。
+
+💡 かみ砕くと: 投資の天才チームをAIで構成したもの。複数の専門家が商量して、より良い投資判断を下す。
 
 > ⚙️ルール採点 ★3(AI関連キーワード2件・累計★97203)
 
 ### ⚙️ [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)
 
-★★☆☆☆  **今日★259** / 累計★60,978 / 成長率0.4%  `初見`
+★★☆☆☆  **今日★259** / 累計★60,981 / 成長率0.4%  `初見`
 
-小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫
+主要SNSの投稿・コメントを自動で収集する爬虫クローラー
 
-> ⚙️ルール採点 ★2(累計★60978)
+📖 詳説: 抖音、小紅書、快手、Bilibili、微博、百度贴吧、知乎など複数の中国大手SNSから投稿・コメント・返信を効率的に収集する爬虫フレームワーク。各プラットフォームに特化した取得ロジックを提供する。
+
+💡 かみ砕くと: 微博の投稿やBilibiliのコメントなど、自分で調べたいネット上の情報を代わりに集めてくれる便利ツール。複数のサイトを一括で取材するようなものだ。
+
+> ⚙️ルール採点 ★2(累計★60981)
 
 ### ⚙️ [google-deepmind/weathernext](https://github.com/google-deepmind/weathernext)
 
@@ -214,7 +306,11 @@ TradingAgents: Multi-Agents LLM Financial Trading Framework
 
 ★☆☆☆☆  **今日★111** / 累計★6,014 / 成長率1.8%  `2週連続`
 
-Dopamine is a semi-untethered jailbreak for iOS 15 to 26(.0.1)
+iOS 15～26対応 半 Untethered ジェイルブレイクツール
+
+📖 詳説: iOS 15から26.0.1までのバージョンに対応する半解脱ジェイルブレイク。semi-untethered形式により、起動時にPC接続なしで基本ジェイルブレイク状態を維持できる。
+
+💡 かみ砕くと: スマホの制限を外して、より自由的使えるようにするツール。半自動式の鍵のようなもので、一回開けると再起動後も比较大的范围を開けっぱなしにできる。
 
 > ⚙️ルール採点 ★1(環境プロファイル合致・環境非関連(2件))
 
@@ -230,6 +326,6 @@ Dopamine is a semi-untethered jailbreak for iOS 15 to 26(.0.1)
 
 ## 🤖 今週の評価コスト
 
-- **$0.0000** / 16件評価
+- **$0.0032** / 16件評価
 - 評価方法: rule_fallback:16
-- 週$20キャップ対比: 0.00%
+- 週$20キャップ対比: 0.02%
