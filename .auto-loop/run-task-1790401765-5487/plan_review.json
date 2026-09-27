@@ -1,0 +1,114 @@
+{
+  "verdict": "ok",
+  "abort_reason": "",
+  "by_severity": {
+    "critical": [],
+    "high": [
+      {
+        "issue": "1日1件キャップの具体的な確認手順がPhase 1から漏れている",
+        "quote": "本日既に同日評価が実行済みの場合は1日1件キャップにより skip する（実行前に当日の評価md追記有無を確認）",
+        "suggestion": "想定リスクには記載がありますが、実装手順のPhase 1に「評価mdをgrepし、当日の評価実行件数が1件以上ならキャップ到達として処理を中断する」という具体的なステップを明記してください。",
+        "vendor": "gemini"
+      },
+      {
+        "issue": "verdictがunknownになった場合のwriteback引数が未定義",
+        "quote": "ok行ゼロなら verdict を「unknown（mlr証跡ゼロ）」に修正して終了。 / keep → `--remove --verdict keep`／skip → `--verdict skip --reason ... --re-eval-trigger ...`",
+        "suggestion": "Phase 3でunknownになった場合、Phase 4で `ai-eval-writeback.py` に渡す引数（例: `--verdict unknown`）やその際の挙動を明記してください。未定義の場合、スクリプトエラーや手動介入の温床になります。",
+        "vendor": "gemini"
+      },
+      {
+        "issue": "テスト区分「対象外」の宣言が、観測された plan との整合性を欠いている（評価md追記+writeback実行はCLI/JSON操作を含むため、本来は integration or e2e 区分が妥当）",
+        "quote": "テスト区分: 対象外 — コードファイル変更が無いタスクのため（評価md追記+既存スクリプト `ai-eval-writeback.py` の実行のみ・新規コード・テストコードの追加は行わない）",
+        "suggestion": "テスト区分を「integration（writeback CLI + pre-commit hook 連動）」または「e2e（pending.json → eval md → writeback → push までの状態遷移）」に修正し、各 Phase を検証ケースとして最低1件は書く。コード変更ゼロでも CLI/状態遷移にバグは混入し得る。",
+        "vendor": "minimax"
+      },
+      {
+        "issue": "Phase 2 の「frontmatter は触らない」と fixed-format セクション追記が、frontmatter の schema（tags 等）とセクションの重複キー整合性を検証していない",
+        "quote": "`30_RESEARCH/MCPサーバー/2026-06-24_GitHub急上昇AIリポジトリ10選評価.md` のファイル末尾に固定形式セクションを追記（frontmatterは触らない）",
+        "suggestion": "frontmatter の tags/aliases/custom-key と追記セクションのキー衝突リスクを事前に `grep` で確認する手順を Phase 2 に明示する。例: `grep -E \"^## affaan-m/ECC\" <md>` を追記前に実行し、二重定義や frontmatter 内の同名キーを検出。",
+        "vendor": "minimax"
+      },
+      {
+        "issue": "代替判定リスクの対策が「引用を必須」とあるが、引用対象の本文照合手順（ECC のどのファイル/行を grep/jq 等で読むか）が具体化されていない",
+        "quote": "13類型「代替判定の表層化」対策として、比較対象機構名の本文照合+根拠引用をドラフト内で必ず実施する。failケース: 引用なき代替済み判定を出すこと。",
+        "suggestion": "Phase 2 のドラフトに最低1つの具体的照合を必須化する。例: 「ECC の `harness/skills.py` L42-L78 を引用、本環境の `~/.claude/skills/superpowers/` の SKILL.md と比較、差分は○行のみ」等のテンプレを plan に書き、証跡として引用行を残すこと。",
+        "vendor": "minimax"
+      }
+    ],
+    "med": [
+      {
+        "issue": "概要のfetched日と受け入れ条件のセクションヘッダ日付の不整合",
+        "quote": "fetched=2026-09-21 / 評価mdに `## affaan-m/ECC (2026-09-26)` セクションが実在し",
+        "suggestion": "セクションヘッダの日付（09-21か09-26か）を統一してください。日付のズレは後続のパースエラーやgrep失敗を引き起こすリスクがあります。",
+        "vendor": "gemini"
+      },
+      {
+        "issue": "grepによる「取り入れ候補」欄の存在チェックがファイル全体にかかっている",
+        "quote": "事前に `grep -c \"取り入れ候補（設計の盗み\"` を実行（0件なら書き戻し中止）",
+        "suggestion": "ファイル全体をgrepすると過去の評価分がヒットし、今回の書き忘れを検知できません。awk等で `affaan-m/ECC` のセクションのみを抽出した上でgrepを実行するよう修正してください。",
+        "vendor": "gemini"
+      },
+      {
+        "issue": "「設計の盗み」におけるライセンスおよびセキュリティ確認の欠落",
+        "quote": "「取り入れ候補（設計の盗み）」欄は省略禁止",
+        "suggestion": "外部のプロンプトや設計を取り入れる際、ライセンスの互換性確認や、悪意のあるプロンプトインジェクション・マルウェア的挙動が含まれていないかのセキュリティ評価（サニタイズ）をPhase 2の観点に追加してください。",
+        "vendor": "gemini"
+      },
+      {
+        "issue": "Phase 1 で pending 内「実在することを確認（実測済み・本計画立案時に entry を確認済み）」と書いているが、計画立案時の観測は証跡として成立しない",
+        "quote": "`~/projects/obsidian-ssot/00_SYSTEM/stats/pending-ai-repos.json` を読み `affaan-m/ECC` が pending 内に実在することを確認（実測済み・本計画立案時に entry を確認済み）",
+        "suggestion": "Phase 1 実行時に `jq '.[] | select(.repo==\"affaan-m/ECC\")' pending-ai-repos.json` の出力（または同等の jq フィルタ）を証跡として記録・完了報告に貼付する旨を明記する。「実測済み」は実行時の証跡で再確認する。",
+        "vendor": "minimax"
+      },
+      {
+        "issue": "受け入れ条件の「coverage 変動 0pt（既存値±5pt以内）」が、coverage の baseline（既存値）をどこで取得するか未定",
+        "quote": "coverage 変動 0pt（既存値±5pt以内を満たす）",
+        "suggestion": "Phase 1 実行時に既存 coverage の baseline 値を取得（例: `coverage report --format=...` または CI の最新値）を証跡として記録する手順を追加する。コード変更ゼロでも coverage は実行条件で揺れるため baseline 必須。",
+        "vendor": "minimax"
+      },
+      {
+        "issue": "「★826/累計263,758」のリポ情報鮮度が不明。fetched=2026-09-21 と現在（2026-09-26 想定）のタイムスタンプ乖離が記述されておらず、評価疲れとの関連も分析されていない",
+        "quote": "pending リポジトリ `affaan-m/ECC`（AIエージェントのハーネス性能最適化システム・Skills/instincts/memory/security 統合・tag=`定着`・fetched=2026-09-21・★826/累計263,758）",
+        "suggestion": "fetched から起票日までの日数と、その間に pending 内で起きた件数変動（`jq 'length'` 等）を Phase 1 の観測欄で併記する手順を追加。評価疲れ対策の有効性検証材料とする。",
+        "vendor": "minimax"
+      }
+    ],
+    "low": [
+      {
+        "issue": "受け入れ条件の「テスト緑件数」は「起票時点の実測値から減少なし」と抽象的で、ベースラインの取得コマンドがない",
+        "quote": "テスト緑件数は既存テストに変更を加えないため起票時点の実測値から減少なし。",
+        "suggestion": "Phase 1 で `pytest -q 2>&1 | tail -n 1` 等の具体的実行コマンドと結果（pass 数）を証跡化し、Phase 4 完了時に同コマンドを再実行して比較する手順を追加する。",
+        "vendor": "minimax"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "vendor": "gemini",
+      "backend_kind": "gemini-sdk-rest",
+      "raw_status": "ok",
+      "model": "gemini-3.1-pro-preview",
+      "fallback_used": false,
+      "error_detail": "",
+      "item_count": 5
+    },
+    {
+      "vendor": "minimax",
+      "backend_kind": "minimax-anthropic",
+      "raw_status": "ok",
+      "model": "MiniMax-M3",
+      "fallback_used": false,
+      "error_detail": "",
+      "item_count": 7
+    },
+    {
+      "vendor": "openrouter",
+      "backend_kind": "openrouter-chat",
+      "raw_status": "ok",
+      "model": "cohere/north-mini-code:free",
+      "fallback_used": false,
+      "error_detail": "",
+      "item_count": 0
+    }
+  ]
+}

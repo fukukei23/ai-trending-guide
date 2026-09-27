@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "skipped": true,
+  "reasons": [
+    "allowlist外・ゲートskip（コード系repoのみ有効）"
+  ],
+  "warnings": [],
+  "delta": {
+    "new_functions": 0,
+    "new_substantive": 0,
+    "existing_changed": false,
+    "code_files_changed": [],
+    "mock_count": 0
+  },
+  "pytest": {
+    "rc": 5,
+    "green_count": null,
+    "log_path": "/home/yn4416/projects/ai-trending-guide/.auto-loop/run-task-1790401765-5487/logs/pytest.log"
+  }
+}

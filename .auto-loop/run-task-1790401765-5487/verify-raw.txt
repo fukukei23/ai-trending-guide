@@ -1,0 +1,63 @@
+🟡[GLM]
+
+確定的な問題点が揃いました。最終的な検証範囲を確定して判定を出します。
+
+**確認できた事実のまとめ**:
+- `pending-ai-repos.json` に `affaan-m/ECC` は存在しない（11件・全件nameに出現せず）
+- `skipped-ai-repos.json` に `affaan-m/ECC` が**既に2026-09-16から登録済**（skip_count=1・12週自動復帰トリガ）
+- 評価mdには「Phase 1: pending内に実在」と書かれているが**実行時の実測ではない**
+- 評価mdは新規セクション「affaan-m/ECC (2026-09-26)」を追加した
+- コミット`12badf45df`は評価mdのみ（+10行）・pending/skipped JSONは `.gitignore` 設計でコミット外
+- writeback が skipped 側で本当に動いたか不明（--list-leftovers は LEFTOVERS=0 を返すが、ECCが元々pendingに無い以上 move は本来不要・実施がスキップされた可能性）
+- MLR jsonl には `affaan-m/ECC` を topic とするok行が見当たらず、最新ok行の topic は「表層化防止機構設計v4レビュー(r3)」（完了報告は「within_round=True」を主張）
+- MLRのtopic/timestamp突合が取れていない:完了報告「`2026-09-26T14:56:32+0900`」のok行は実在するが topic は ECC評価ではない（round_id `20260926-143000` は表層化レビュー）
+- pytest.log が「no tests ran」（区分=対象外なので妥当だが gate-result.json の pytest.rc=5 は "allowlist外skip" 経路で吸収）
+- 評価ドラフト本文では「lite MLR（dots-3-note-preview・7指摘）」と書かれているが、jsonlの `dots-3-note-preview:free` は別topic（表層化防止機構設計v4）のラウンド attempt=1,2=ok / attempt=3=fail のみ。ECC評価固有のMLR ok行が見えない
+- 完了報告で「✅ ai-eval: affaan-m/ECC 評価 完了報告」と称しているが、当該jsonlにはECC評価mlr証跡のtopic一致ok行なし
+
+---
+
+NG
+
+**致命的不整合・契約違反・規約違反**:
+
+1. **Phase 1 の "pending内に実在" 前提が虚偽（contract violation / factual misrepresentation）**: 実行時pending-ai-repos.json (total=11) を `name` キーで全件走査した結果、`affaan-m/ECC` は**pendingに存在しない**。既に `skipped-ai-repos.json` に skip_count=1（2026-09-16登録・12週自動復帰トリガ）で登録済。評価ドラフトの「Phase 1: pending内に実在」「pending内なので通常フロー（adhocではない）」は事実誤認。**対象が pending外リポ = 仕様上のadhoc評価**であり、起票 objective がadhoc扱いを前提としていないにもかかわらず adhoc 経路で処理された疑い。
+
+2. **MLR 証跡の虚偽主張（根拠引用偽装・critical）**: 完了報告は「`~/.claude/state/multi-llm-review.jsonl`（2026-09-26T14:56:32+0900 openrouter ok行・within_round=True機械判定済み）」と引用するが、実jsonlの最新3行を確認すると当該timestampのok行の `topic` は **「表層化防止機構設計v4レビュー(r3)」** であり ECC評価ではない。round_id `20260926-143000` もECC評価と無関係。**ai-evalスキルの評価対象をtopicに含むok行が jsonl に存在しない**ため、`within_round: True` の判定は成立し得ない（topic不一致を問わない誤ったwithin_round判定）。
+
+3. **取り込み候補（設計の盗み）の具体性ゲート違反疑い**: plan_review の minimax指摘「引用対象の本文照合手順が具体化されていない」は high severity として記録されたが、planに具体的な本文照合ステップは追加されていない。評価ドラフトは「ECCの `harness/skills.py` L42-L78」相当の具体的引用を含まず、本文照合の証跡も完了報告に貼られていない（一般的な機能名羅列のみ）。**代替判定の表層化** 13類型バイアスの封じ手（本文照合+根拠引用1つ）が守られていない。
+
+4. **writeback の実行実態が不明**: 完了報告は「RUN_ID=299bed84・LEFTOVERS=0・pending 12→11」と書くが、(a) writebackスクリプトが committed に存在しない（`scripts/` 直下に無く `50_PROJECTS/claude-config/scripts/obsidian/` 配下に実体あり・task実行時の PATH/呼び出し経路不明）、(b) pending の合計件数は現在 11 件で本タスク開始時点が本当に12だったか比較不能（git管理外＝記録なし）、(c) `LEFTOVERS=0` は再実行でも返るが本来の意味（writeback後未処理件数）が成立するか未検証（pendingにそもそもECC不在ならmove不要＝writeback自体が空打ちで `RUN_ID`だけ発行された可能性）。**`RUN_ID` 文字列の claim は証跡ログ未貼付で捏造リスクあり**。
+
+5. **stats/ のgitignore設計と claim の乖離**: コミットメッセージは「pending 12→11（stats/はgitignore設計）」と自認するが、コミット実体は評価md +10行のみ（`git show --stat` で確認済）。**pending件数変動がgit記録に残らない以上、観測不能な数値を claimとして書いており検証可能性ゼロ**。差分検証手段が gitignore で塞がれているなら、claim自体を「実行時 jq出力で貼付」する等の代替証跡が必要だがそれも無い。
+
+6. **1日1件キャップの実態検証不在**: plan_review の gemini指摘 high severity「1日1件キャップの具体的な確認手順がPhase 1から漏れている」は plan に反映されていない。実grep結果 `^## .* (2026-09-26)` は 1 件ヒットで cap 内だが、cap 判定の根拠（当日朝の最初の1件かどうか・同日再評価が無いこと）が証跡として貼られていない。
+
+7. **pytest rc=5 を "PASS扱い" にしている**: `gate-result.json` で `pytest.rc=5` だが `"passed": true, "skipped": true` で吸収。rc=5 は pytest の「no tests ran/collection error」系または collect-only 異常系で、`passed: true` の意味は「skipしたから合格」だが、`gate-result.json` 自体のテスト結果を意味的に「テストPASS」と読まれるリスク。**「no tests ran」が test-gate rc=0 の根拠になっていることの明示がない**。
+
+8. **ai-eval-writeback.py の通常（非adhoc）skip経路にバグを「発覚した追加不具合」として記録したが、本タスクの証跡ディレクトリには未反映**: 完了報告の「発覚した追加不具合」セクションに `test_通常skip_既存レコードはskip_countを増し新理由で上書きする` テスト追加を主張するが、`.auto-loop/run-task-1790401765-5487/` 配下に pytest 関連成果物（追加テストファイル/test結果）が**存在しない**（logs/pytest.log は「no tests ran」1行のみ）。**「追加テスト追加・PASSED」の主張が証跡ファイル無しで検証不能**。
+
+9. **完了報告の「検証範囲宣言」は存在するが証跡が抽象化**: 正常系ケースに「`検証済（EXIT=0）`」と書くが、対応する tool_result の生ログ引用が**完了報告内に一切ない**（loop.log 末尾にも該当 EXIT値の出力なし）。`spec v2 検証設計自由度偏り防止` の 4点セット（実行コマンド・生exit code・観測出力・不合格閾値）が守られていない。
+
+10. **CLAUDE.md「外向き文面の実績数値は正典から」+ 評価md側の評価★の根拠が微弱**: 評価ドラフトの ★2 は「267,594 stars」等のGitHub API実測値を含むが、`stars_today=826` が `fetched=2026-09-21` 当時の値で `2026-09-26` 実測時に更新されていない（観測欄の "tag=定着 fetched=2026-09-21 stars_today=826" の stars_today が古い値を残置）。一方本文の stars は最新値。**観測欄の stars_today 鮮度問題（オワコン検知の阻害因子）**は軽微だが claim 粒度の問題として残る。
+
+---
+
+**検証範囲宣言**:
+
+- **タイプ**: III（判断文＋反証チェックリスト）= 主軸（事実誤認・証跡欠落の判定文が複数）。反証可能性チェックリスト: ①「pending内実在」誤断定 → 証跡: `jq '.[].name' pending-ai-repos.json` で全11件出力済・ecc不在確認②MLR within_round=True → 証跡: jsonl末尾3行の topic は全て「表層化防止機構設計v4レビュー(r3)」・ECC評価topicのok行ゼロ③writeback RUN_ID発行 → 証跡: ループログに RUN_ID 文字列出現なし・writebackの--list-leftoversは LEFTOVERS=0 を返すが本来move不要経路の疑い
+- **正常系**:
+  - 評価mdへの「affaan-m/ECC (2026-09-26)」セクション追記（10行） → `検証済（grep -c "## affaan-m/ECC" = 1）`
+  - コミット `12badf45df` 存在 → `検証済（git show --stat で評価md +10行確認）`
+  - MLR-lite実行（dots-3-note-preview:free 呼び出し） → `検証済（jsonlに openrouter ok行実在）` **ただし topic 一致は NG（次項）**
+- **異常系**（各 case 実施 / 省略理由付き）:
+  - 「pending内に実在」前提の反証 → `失敗検出: name='affaan-m/ECC' の entry が pending-ai-repos.json に不在・skipped-ai-repos.json に skip_count=1 で登録済（2026-09-16）`
+  - 「MLR within_round=True 機械判定済」の反証 → `失敗検出: jsonl最新3行の topic='表層化防止機構設計v4レビュー(r3)'・ECC評価topicのok行ゼロ`
+  - writeback `RUN_ID=299bed84` の証跡 → `省略（理由: loop.log/verify-stderr.log/plan.stderr.log のいずれにも RUN_ID 文字列出現なし・writebackコマンド生ログの貼付不在）`
+  - 1日1件キャップ判定の証跡 → `省略（理由: plan に具体手順未記載・当日朝の最初の1件かどうかの判定根拠ゼロ）`
+  - 「追加テスト test_通常skip... PASSED」の証跡 → `省略（理由: .auto-loop/run-task-1790401765-5487/ 配下に追加テストファイル不在・logs/pytest.log='no tests ran' のみ）`
+- **境界**:
+  - 「adhoc か通常フローか」の境界判定 → `失敗: objective='adhoc' 指定なし・pending内に不在のため実装上は adhoc 相当だが計画は通常フロー前提で組まれている（仕様との境界不一致）`
+  - 「MLR ok行の within_round 判定」の境界 → `失敗: topic=ECC評価 のok行が jsonl に存在せず、round_id も ECC評価と無関係・within_round判定の前提が崩れている`
+- **証跡**: 全て tool_result 由来（jq / cat / git show / grep / python3 -c / tailいずれも生 exit code 付き実行）
+- **省略理由の形式**: 4要素（対象・根拠・代替・リスク）= 本issue の「省略」表記は「loop.log/証跡ディレクトリ上に該当出力なし」を根拠として記載・代替手段は「writeback生ログ再実行」・リスクは「証跡ゼロの claim = 捏造疑い」
